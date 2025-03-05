@@ -9,13 +9,47 @@
 <body>
     <div class="container">
         <div class="header">
-
+            <div class="header_row_1">
+                <div class="search_form_container">
+                    <form action="#" class="search_form">
+                        <button class="search_btn">
+                            <a href="">
+                                <svg class="header_icon magnify" viewbox="0 0 24 24">
+                                    <use xlink:href="static/icons/all-icons.svg#magnify"></use>
+                                </svg>
+                            </a>
+                        </button>
+                        <input type="search" class="search_input" id="search_input">
+                    </form>
+                </div>
+                <div class="notifications_container">
+                    <svg class="header_icon bell" viewbox="0 0 24 24">
+                        <use xlink:href="static/icons/all-icons.svg#bell-ring"></use>
+                    </svg>
+                    <div class="profile_photo"></div>
+                    <p>Morgan Oakley</p>
+                </div>
+            </div>
+            <div class="header_row_2">
+                <div class="profile_greeting_container">
+                    <div class="profile_photo"></div>
+                    <div class="greeting_msg">
+                        <p>Hi there,</p>
+                        <h3>Morgan Oakley (@morgan)</h3>
+                    </div>
+                </div>
+                <div class="header_buttons_container">
+                    <button class="header_btn">New<a href=""></a></button>
+                    <button class="header_btn">Upload<a href=""></a></button>
+                    <button class="header_btn">Share<a href=""></a></button>
+                </div>
+            </div>
         </div>
 
         <div class="sidebar">
             <div class="sidebar_top">
                 <a class="sidebar_items_container" href="#">
-                    <svg class="sidebar_icon">
+                    <svg class="sidebar_icon" viewbox="0 0 24 24">
                         <use xlink:href="static/icons/all-icons.svg#dashboard"></use>
                     </svg>
                     <h3>Dashboard</h3>
