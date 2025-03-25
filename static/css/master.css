@@ -75,7 +75,7 @@ h6 {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 150px 1fr;
     grid-template-columns: minmax(160px, 1fr) 4fr;
     /* border: 1px solid hotpink; */
 }
@@ -151,7 +151,7 @@ h6 {
     width: 32px;
     height: 32px;
     border-radius: 100%;
-    background-image: url("../images/profile_avatar.png");
+    background-image: url("../images/profile_1.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -175,7 +175,7 @@ h6 {
     height: 64px;
     border-radius: 100%;
     margin: 20px;
-    background-image: url("../images/profile_avatar.png");
+    background-image: url("../images/profile_1.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -262,23 +262,26 @@ h3.main_part_title {
 
 .card {
     /* border: 1px solid blue; */
-    display: grid;
-    grid-template-rows: 1.5fr 0.3fr;
     border: none;
-    border-left: 5px solid orange;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     background: #fff;
-    box-shadow: #333 1px 1px 5px;
+    box-shadow: #999 1px 1px 5px;
+}
+
+.card.main_center_card {
+    display: grid;
+    grid-template-rows: 1.5fr 0.3fr;
+    border-left: 5px solid orange;
 }
 
 section.card_text {
     padding-bottom: 16px;
 }
 
-section.card_text p {
-    color: #333;
+.card p {
+    color: #999;
 }
 
 .card .card_icons_container {
@@ -291,8 +294,99 @@ section.card_text p {
 .card .card_icon {
     width: 24px;
     height: 24px;
+    fill: #999;
 }
 
+.main_right_aside {
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main_right_aside .announcements_container {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.announcements p {
+    font-size: 12px;
+}
+
+.announcement_item {
+    border-bottom: 1px solid #999;
+    display: grid;
+    align-content: center;
+}
+
+.announcement_item:last-child {
+    border-bottom: none;
+}
+
+.trending_container {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+
+}
+
+section.trending {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: #999 1px 1px 5px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.trending_item {
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.trending_item_text {
+    justify-self: left;
+}
+
+.trending_item_icon {
+    justify-self: center;
+}
+
+.trending_item_icon {
+    width: 48px;
+    height: 48px;
+    /* border: 1px solid hotpink; */
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.trending_item:nth-child(1) > .trending_item_icon {
+    background-image: url(../images/profile_1.png);
+
+}
+
+.trending_item:nth-child(2) > .trending_item_icon {
+    background-image: url(../images/profile_2.png);
+    
+}
+
+.trending_item:nth-child(3) > .trending_item_icon {
+    background-image: url(../images/profile_3.png);
+    
+}
+
+.trending_item:nth-child(4) > .trending_item_icon {
+    background-image: url(../images/profile_4.png);
+    
+}
 
 /* media queries */
 
