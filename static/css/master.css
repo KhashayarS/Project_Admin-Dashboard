@@ -83,11 +83,9 @@ html, body {
     display: grid;
     grid-template-rows: 150px 1fr;
     grid-template-columns: minmax(160px, 1fr) 4fr;
-    /* border: 1px solid hotpink; */
 }
 
 .header {
-    /* border: 1px solid navy; */
     background-color: #fff;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
@@ -136,7 +134,6 @@ html, body {
 }
 
 .notifications_container {
-    /* border: 1px solid red; */
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     display: grid;
@@ -146,7 +143,6 @@ html, body {
 }
 
 .header_icon.bell {
-    /* border: 1px solid blue; */
     min-width: 24px;
     max-width: 24px;
     min-height: 24px;
@@ -206,10 +202,6 @@ html, body {
     grid-template-rows: 0.8fr 3fr 6fr;
 }
 
-.sidebar > * {
-    /* border: 1px solid darkgreen; */
-}
-
 .sidebar_items_container {
     color: #fff;
     text-decoration: none;
@@ -218,11 +210,6 @@ html, body {
     align-items: center;
     align-content: center;
     margin: 10px;
-    /* border: 1px solid blue; */
-}
-
-.sidebar_items_container > * {
-    /* border: 1px solid red; */
 }
 
 .sidebar_items_container > p,
@@ -239,7 +226,6 @@ html, body {
 }
 
 .main {
-    /* border: 1px solid yellow; */
     background-color: #b6b2b2;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -249,7 +235,6 @@ html, body {
 }
 
 .main > .main_center_part {
-    /* border: 1px solid green; */
     display: grid;
     grid-template-rows: 50px 1fr;
 }
@@ -261,13 +246,11 @@ h3.main_part_title {
 }
 
 .main .cards_container {
-    /* border: 1px solid hotpink; */
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
 }
 
 .card {
-    /* border: 1px solid blue; */
     border: none;
     border-radius: 5px;
     padding: 15px;
@@ -304,7 +287,6 @@ section.card_text {
 }
 
 .main_right_aside {
-    /* border: 1px solid blue; */
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -351,7 +333,6 @@ section.trending {
 }
 
 .trending_item {
-    /* border: 1px solid blue; */
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
@@ -368,7 +349,6 @@ section.trending {
 .trending_item_icon {
     width: 48px;
     height: 48px;
-    /* border: 1px solid hotpink; */
     border-radius: 100%;
     background-size: cover;
     background-repeat: no-repeat;
