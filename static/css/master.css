@@ -71,6 +71,12 @@ h6 {
 }
 
 /* Custom Styles */
+html, body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+      "wdth" 100;
+  }
 
 .container {
     height: 100vh;
